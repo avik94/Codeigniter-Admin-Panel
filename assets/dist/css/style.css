@@ -1,0 +1,20 @@
+.login-page{
+  height: auto;
+  background-color: #1d272f;
+}
+.errorMessage{
+  color: red;
+  font-weight: 600;
+}
+.box-header.with-border{
+  text-align: center;
+}
+.customStyle{
+  border: 1px solid #d6d6d6;
+}
+.button{
+  padding: 5px;
+  background: #186913;
+  color: #f2f2f2;
+  border-radius: 4px;
+}
