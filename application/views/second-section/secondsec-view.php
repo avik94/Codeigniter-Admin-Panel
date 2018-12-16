@@ -137,7 +137,7 @@
           </a>
         </li>
         <!-- first menu strat -->
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Banner Section</span>
             <span class="pull-right-container">
@@ -146,12 +146,12 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="banner_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li class="active"><a href="banner_view"><i class="fa fa-eye"></i> View</a></li>
+            <li><a href="banner_view"><i class="fa fa-eye"></i> View</a></li>
           </ul>
         </li>
         <!-- first menu end  -->
         <!-- seccond menu start -->
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Second Section</span>
             <span class="pull-right-container">
@@ -159,8 +159,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
+            <li class="active"><a href="second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
         <!-- seccong menu end -->
@@ -310,12 +310,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Banner View
+        Second Section View
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Banner View</li>
+        <li class="active">Second Section View</li>
       </ol>
     </section>
 
@@ -340,18 +340,16 @@
                   <th class="customStyle">ID</th>
                   <th class="customStyle">First Headding</th>
                   <th class="customStyle">Seccond Headding</th>
-                  <th class="customStyle">Third Headding</th>
-                  <th class="customStyle">Image</th>
+                  <th class="customStyle">Third Paragraph</th>
                   <th class="customStyle">Action</th>
                 </tr>
                 <tr>
-                  <?php foreach ($getBannerData as $data): ?>
-                  <td class="customStyle"><?php echo $data->first_sec_ID; ?></td>
+                  <?php foreach ($getSecondSecData as $data): ?>
+                  <td class="customStyle"><?php echo $data->second_ID; ?></td>
                   <td class="customStyle"><?php echo $data->first_headding; ?></td>
                   <td class="customStyle"><?php echo $data->sec_headding; ?></td>
-                  <td class="customStyle"><?php echo $data->third_Headding; ?></td>
-                  <td class="customStyle"><?php echo $data->background_Image; ?></td>
-                  <td class="customStyle"><a href="banner_edit" class="button">Update</a></td>
+                  <td class="customStyle"><?php echo $data->third_pragraph; ?></td>
+                  <td class="customStyle"><a href="second_sec_edit" class="button">Update</a></td>
                 <?php endforeach; ?>
                 </tr>
               </tbody>

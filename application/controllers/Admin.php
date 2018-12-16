@@ -68,11 +68,14 @@ class Admin extends CI_Controller {
 		$data["getBannerData"] = $this->Model->getData($tableName);
 		$this->load->view("banner/banner-view",$data);
 	}
-
+	// second section edit
 	public function SecondSectionEdit(){
 		$this->load->view("second-section/seccondSecEdit");
+
+	}
+	// second section edit from submit function
+	public function formSubmit(){
 		$submit = $this->input->post("submit");
-		// if (isset($submit)) {
 		$data["first_headding"] = $this->input->post("firstHeadding");
 		$data["sec_headding"] = $this->input->post("secHeadding");
 		$data["third_pragraph"] = $this->input->post("paragraph");
@@ -80,5 +83,11 @@ class Admin extends CI_Controller {
 		$idName = "second_ID";
 		$this->Model->updateData($idName,$tableName,$data);
 	}
-// }
+	// second section view
+	public function SecondSectionView(){
+		$tableName = "seccond_section";
+		$data["getSecondSecData"] = $this->Model->getData($tableName);
+		$this->load->view("second-section/secondsec-view",$data);
+
+	}
 }

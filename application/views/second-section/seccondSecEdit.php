@@ -160,7 +160,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="second-section-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
         <!-- seccong menu end -->
@@ -353,7 +353,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Submit" >
+                <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Submit" onclick="test();">
               </div>
             </form>
             <p class="msg"></p>
@@ -418,17 +418,22 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php base_url(); ?>assets/dist/js/demo.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 <script>
+
 $(function () {
-  $('form').on('submit', function (e) {
+  $('#myForm').submit(function (e) {
+    var formData = $(this);
     e.preventDefault();
     $.ajax({
       type: 'post',
-      url: 'second_sec_edit',
-      data: $('form').serialize(),
+      url: '<?php echo base_url(); ?>Admin/formSubmit',
+      data: formData.serialize(),
       success: function () {
-        alert('form was submitted');
+        $('#myForm').trigger("reset");
+        swal("Good!", "Data Saved Successfully", "success");
       }
     });
   });
