@@ -173,7 +173,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="second-section-service.html"><i class="fa fa-edit"></i> Edit</a></li>
+            <li class=""><a href="second_sec_service_edit"><i class="fa fa-edit"></i> Edit</a></li>
             <li><a href="second-section-service-view.html"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>

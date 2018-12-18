@@ -21,6 +21,11 @@ class Model extends CI_Model{
     $this->db->where($idName,1);
     $this->db->update($tableName,$data);
   }
+  // updating data by geting id with parameter
+  public function updateDataById($idName,$id,$tableName,$data){
+    $this->db->where($idName,$id);
+    $this->db->update($tableName,$data);
+  }
 
 
 }

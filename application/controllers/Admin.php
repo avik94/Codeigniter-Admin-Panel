@@ -75,7 +75,6 @@ class Admin extends CI_Controller {
 	}
 	// second section edit from submit function
 	public function formSubmit(){
-		$submit = $this->input->post("submit");
 		$data["first_headding"] = $this->input->post("firstHeadding");
 		$data["sec_headding"] = $this->input->post("secHeadding");
 		$data["third_pragraph"] = $this->input->post("paragraph");
@@ -88,6 +87,45 @@ class Admin extends CI_Controller {
 		$tableName = "seccond_section";
 		$data["getSecondSecData"] = $this->Model->getData($tableName);
 		$this->load->view("second-section/secondsec-view",$data);
+	}
+
+	// second section service edit
+	public function SecondSectionServiceEdit(){
+		$this->load->view("seccond-section-service/seccond-service-edit");
+
+	}
+
+	// second section service edit form1 submit function
+	public function SecondServiceForm1Submit(){
+		$data["icon"] = $this->input->post("icon");
+		$data["tittle"] = $this->input->post("tittle");
+		$data["text"] = $this->input->post("paragraph");
+		$tableName = "seccond_section_service";
+		$id = 1;
+		$idName = "service_ID";
+		$this->Model->updateDataById($idName,$id,$tableName,$data);
+
+	}
+	// second section service edit form2 submit function
+	public function SecondServiceForm2Submit(){
+		$data["icon"] = $this->input->post("icon");
+		$data["tittle"] = $this->input->post("tittle");
+		$data["text"] = $this->input->post("paragraph");
+		$tableName = "seccond_section_service";
+		$id = 2;
+		$idName = "service_ID";
+		$this->Model->updateDataById($idName,$id,$tableName,$data);
+
+	}
+	// second section service edit form2 submit function
+	public function SecondServiceForm3Submit(){
+		$data["icon"] = $this->input->post("icon");
+		$data["tittle"] = $this->input->post("tittle");
+		$data["text"] = $this->input->post("paragraph");
+		$tableName = "seccond_section_service";
+		$id = 3;
+		$idName = "service_ID";
+		$this->Model->updateDataById($idName,$id,$tableName,$data);
 
 	}
 }

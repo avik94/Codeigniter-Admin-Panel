@@ -57,3 +57,4 @@ $route['banner_edit']="Admin/bannerEdit";
 $route['banner_view']="Admin/bannerView";
 $route['second_sec_edit']="Admin/SecondSectionEdit";
 $route['second_sec_view']="Admin/SecondSectionView";
+$route['second_sec_service_edit']="Admin/SecondSectionServiceEdit";

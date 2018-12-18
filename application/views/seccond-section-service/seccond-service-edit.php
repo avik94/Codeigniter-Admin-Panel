@@ -146,12 +146,12 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="banner_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="banner_view"><i class="fa fa-eye"></i> View</a></li>
+            <li><a href="banner_view"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
         <!-- first menu end  -->
         <!-- seccond menu start -->
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Second Section</span>
             <span class="pull-right-container">
@@ -159,13 +159,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li class="active"><a href="second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
+            <li class="active"><a href="second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
+            <li><a href="second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
         <!-- seccong menu end -->
         <!-- third menu start -->
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Second Section Service</span>
             <span class="pull-right-container">
@@ -173,7 +173,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="second_sec_service_edit"><i class="fa fa-edit"></i> Edit</a></li>
+            <li class="active"><a href="second_sec_service_edit"><i class="fa fa-edit"></i> Edit</a></li>
             <li><a href="second-section-service-view.html"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
@@ -310,12 +310,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Second Section View
+        Second Section Headding Edit
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Second Section View</li>
+        <li class="active">Second Section Headding Edit</li>
       </ol>
     </section>
 
@@ -323,44 +323,119 @@
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row">
-        <div class="col-lg-2 col-xs-6">
-
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-8 col-xs-6">
-          <div class="box box-primary">
+        <div class="col-lg-4 ">
+          <div class="box box-success">
             <div class="box-header with-border">
-              <h3 class="box-title">Data Of Seccond Section is Showing Below </h3>
+              <h3 class="box-title">Put Icon and Content</h3>
+              <p>(For Column One)</p>
             </div>
             <!-- /.box-header -->
-            <!-- table start -->
-            <table class="table customStyle">
-              <tbody>
-                <tr>
-                  <th class="customStyle">ID</th>
-                  <th class="customStyle">First Headding</th>
-                  <th class="customStyle">Seccond Headding</th>
-                  <th class="customStyle">Third Paragraph</th>
-                  <th class="customStyle">Action</th>
-                </tr>
-                <tr>
-                  <?php foreach ($getSecondSecData as $data): ?>
-                  <td class="customStyle"><?php echo $data->second_ID; ?></td>
-                  <td class="customStyle"><?php echo $data->first_headding; ?></td>
-                  <td class="customStyle"><?php echo $data->sec_headding; ?></td>
-                  <td class="customStyle"><?php echo $data->third_pragraph; ?></td>
-                  <td class="customStyle"><a href="second_sec_edit" class="button">Update</a></td>
-                <?php endforeach; ?>
-                </tr>
-              </tbody>
-            </table>
+            <!-- form start -->
+            <form id="myForm1">
+              <div class="box-body">
+                <div class="form-group">
+                  <label>Icon</label>
+                  <input type="text" class="form-control" name="icon" required>
+                </div>
+                <div class="form-group">
+                  <label>Tittle</label>
+                  <input type="text" class="form-control" name="tittle" required>
+                </div>
+                <div class="form-group">
+                  <label>Sub Content</label>
+                  <input type="text" class="form-control" name="paragraph" required>
+                </div>
+              </div>
+              <!-- /.box-body -->
 
+              <div class="box-footer">
+                <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Submit" onclick="test();">
+              </div>
+            </form>
+            <p class="msg"></p>
+          </div>
         </div>
         <!-- ./col -->
-        <div class="col-lg-2 col-xs-6">
+        <div class="col-lg-4 ">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Put Icon and Content</h3>
+              <p>(For Column Two)</p>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form id="myForm2" >
+              <div class="box-body">
+                <div class="form-group">
+                  <label>Icon</label>
+                  <input type="text" class="form-control" name="icon" required>
+                </div>
+                <div class="form-group">
+                  <label>Tittle</label>
+                  <input type="text" class="form-control" name="tittle" required>
+                </div>
+                <div class="form-group">
+                  <label>Sub Content</label>
+                  <input type="text" class="form-control" name="paragraph" required>
+                </div>
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Submit" onclick="test();">
+              </div>
+            </form>
+            <p class="msg"></p>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-4 ">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Put Icon and Content</h3>
+              <p>(For Column Three)</p>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form id="myForm3" >
+              <div class="box-body">
+                <div class="form-group">
+                  <label>Icon</label>
+                  <input type="text" class="form-control" name="icon" required>
+                </div>
+                <div class="form-group">
+                  <label>Tittle</label>
+                  <input type="text" class="form-control" name="tittle" required>
+                </div>
+                <div class="form-group">
+                  <label>Sub Content</label>
+                  <input type="text" class="form-control" name="paragraph" required>
+                </div>
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Submit" onclick="test();">
+              </div>
+            </form>
+            <p class="msg"></p>
+          </div>
         </div>
         <!-- ./col -->
 
+      </div>
+      <div class="row">
+
+        <div class="col-lg-9 notice">
+          <p class="note"><b>*NOTE  </b></p>
+          <p>Please Put Icon as Describe Below.<br><b><i>Rule:  </i></b><b>[icon-basic-.....-.....]</b></p>
+          <p>Here are some example <span>for more details please visit font https://fontawesome.com/icons?d=gallery</span></p>
+          <ul>
+              <li>icon-basic-book-pen</li>
+              <li>icon-basic-cards-diamonds</li>
+              <li>icon-basic-pencil-ruler</li>
+          </ul>
+        </div>
       </div>
       <!-- /.row -->
 
@@ -415,9 +490,62 @@
 <script src="<?php base_url(); ?>assets/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php base_url(); ?>assets/dist/js/demo.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
+<script>
+// ajax for 1st form
+$(function () {
+  $('#myForm1').submit(function (e) {
+    var formData = $(this);
+    e.preventDefault();
+    $.ajax({
+      type: 'post',
+      url: '<?php echo base_url(); ?>Admin/SecondServiceForm1Submit',
+      data: formData.serialize(),
+      success: function () {
+        $('#myForm1').trigger("reset");
+        swal("Good!", "Data Saved Successfully", "success");
+      }
+    });
+  });
+});
 
+// ajax for 2nd form
+$(function () {
+  $('#myForm2').submit(function (e) {
+    var formData = $(this);
+    e.preventDefault();
+    $.ajax({
+      type: 'post',
+      url: '<?php echo base_url(); ?>Admin/SecondServiceForm2Submit',
+      data: formData.serialize(),
+      success: function () {
+        $('#myForm2').trigger("reset");
+        swal("Good!", "Data Saved Successfully", "success");
+      }
+    });
+  });
+});
+// ajax for 3rd form
+$(function () {
+  $('#myForm3').submit(function (e) {
+    var formData = $(this);
+    e.preventDefault();
+    $.ajax({
+      type: 'post',
+      url: '<?php echo base_url(); ?>Admin/SecondServiceForm3Submit',
+      data: formData.serialize(),
+      success: function () {
+        $('#myForm3').trigger("reset");
+        swal("Good!", "Data Saved Successfully", "success");
+      }
+    });
+  });
+});
+
+</script>
 
 </body>
 </html>
