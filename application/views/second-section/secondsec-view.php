@@ -330,7 +330,7 @@
         <div class="col-lg-8 col-xs-6">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Data Of First Section is Showing Below </h3>
+              <h3 class="box-title">Data Of Seccond Section is Showing Below </h3>
             </div>
             <!-- /.box-header -->
             <!-- table start -->

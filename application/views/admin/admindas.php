@@ -153,7 +153,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="second-section-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
         <!-- seccong menu end -->
