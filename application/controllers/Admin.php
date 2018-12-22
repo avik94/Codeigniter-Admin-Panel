@@ -223,4 +223,21 @@ class Admin extends CI_Controller {
 		$this->load->view("our-service-feature/our-feature.php",$output);
 
 	}
+
+	// Client Counter Section Edit
+	public function ourClientCounterSection(){
+
+		$crud = new grocery_CRUD();
+		// $crud->set_theme('datatables');
+		$crud->set_table('counter');
+		$crud->unset_delete();
+		$crud->unset_add();
+		$crud->callback_before_delete(array($this,'log_user_before_delete'));
+		$output = $crud->render();
+		$this->ourClientCounterSectionView($output);
+		}
+	function ourClientCounterSectionView($output = null){
+		$this->load->view("client-counter/client-counter.php",$output);
+
+	}
 }

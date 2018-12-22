@@ -208,7 +208,7 @@
         </li>
         <!-- fourth menu end -->
         <!-- fifth menu start-->
-        
+
         <!-- fifth menu end -->
         <!-- Sixth menu start-->
         <li class="treeview">
@@ -219,8 +219,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="client-counter.html"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="client-counter-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li class=""><a href="<?php echo base_url(); ?>client_section_edit"><i class="fa fa-edit"></i> Edit</a></li>
           </ul>
         </li>
         <!-- sixth menu end -->
@@ -314,12 +313,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Second Service Section View
+        Expertise Skill Section
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Second Service Section View</li>
+        <li class="active">Expertise Skill Section</li>
       </ol>
     </section>
 

@@ -204,7 +204,7 @@
         </li>
         <!-- fourth menu end -->
         <!-- fifth menu start-->
-        
+
         <!-- fifth menu end -->
         <!-- Sixth menu start-->
         <li class="treeview">
@@ -215,8 +215,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="client-counter.html"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="client-counter-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li class=""><a href="<?php echo base_url(); ?>client_section_edit"><i class="fa fa-edit"></i> Edit</a></li>
           </ul>
         </li>
         <!-- sixth menu end -->

@@ -69,3 +69,5 @@ $route['our_service_headding_edit']="Admin/ourServiceSectionHeadding";
 $route['our_service_headding_edit/(:any)/(:any)']="Admin/ourServiceSectionHeadding/$1/$2";
 $route['our_service_feature_edit']="Admin/ourServiceSectionFeature";
 $route['our_service_feature_edit/(:any)/(:any)']="Admin/ourServiceSectionFeature/$1/$2";
+$route['client_section_edit']="Admin/ourClientCounterSection";
+$route['client_section_edit/(:any)/(:any)']="Admin/ourClientCounterSection/$1/$2";
