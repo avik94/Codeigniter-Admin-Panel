@@ -65,3 +65,7 @@ $route['expertise_skill_edit']="Admin/expertiseSection";
 $route['expertise_skill_edit/(:any)']="Admin/expertiseSection/$1";
 $route['expertise_skill_edit/(:any)/(:any)']="Admin/expertiseSection/$1/$2";
 $route['expertise_skill_edit/(:any)/(:any)/(:any)']="Admin/expertiseSection/$1/$2/$3";
+$route['our_service_headding_edit']="Admin/ourServiceSectionHeadding";
+$route['our_service_headding_edit/(:any)/(:any)']="Admin/ourServiceSectionHeadding/$1/$2";
+$route['our_service_feature_edit']="Admin/ourServiceSectionFeature";
+$route['our_service_feature_edit/(:any)/(:any)']="Admin/ourServiceSectionFeature/$1/$2";

@@ -202,24 +202,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="our-service-headding.html"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="our-service-headding-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="<?php echo base_url(); ?>our_service_headding_edit"><i class="fa fa-edit"></i> Edit Headding</a></li>
+            <li><a href="<?php echo base_url(); ?>our_service_feature_edit"><i class="fa fa-circle-o"></i> Edit Feature Section</a></li>
           </ul>
         </li>
         <!-- fourth menu end -->
         <!-- fifth menu start-->
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Our Service Feature</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class=""><a href="our-service-feature.html"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="our-service-feature-view.html"><i class="fa fa-circle-o"></i> View</a></li>
-          </ul>
-        </li>
+        
         <!-- fifth menu end -->
         <!-- Sixth menu start-->
         <li class="treeview">

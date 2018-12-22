@@ -174,7 +174,7 @@ class Admin extends CI_Controller {
 	public function expertiseSection(){
 
 		$crud = new grocery_CRUD();
-		$crud->set_theme('datatables');
+		// $crud->set_theme('datatables');
 		$crud->set_table('skill_section');
 
 		$this->config->config['grocery_crud_file_upload_allow_file_types']  = 'gif|jpeg|jpg|png|svg';
@@ -188,6 +188,39 @@ class Admin extends CI_Controller {
 		}
 	function expertiseSectionView($output = null){
 		$this->load->view("expertise-skill/skill.php",$output);
+
+	}
+	// Our service Section Headding
+	public function ourServiceSectionHeadding(){
+
+		$crud = new grocery_CRUD();
+		// $crud->set_theme('datatables');
+		$crud->set_table('our_service_headding');
+		$crud->unset_delete();
+		$crud->unset_add();
+		$crud->callback_before_delete(array($this,'log_user_before_delete'));
+		$output = $crud->render();
+		$this->ourServiceSectionHeaddingView($output);
+		}
+	function ourServiceSectionHeaddingView($output = null){
+		$this->load->view("our-service/service-headding.php",$output);
+
+	}
+
+	// Our service Section Headding
+	public function ourServiceSectionFeature(){
+
+		$crud = new grocery_CRUD();
+		// $crud->set_theme('datatables');
+		$crud->set_table('our_service_feature');
+		$crud->unset_delete();
+		$crud->unset_add();
+		$crud->callback_before_delete(array($this,'log_user_before_delete'));
+		$output = $crud->render();
+		$this->ourServiceSectionFeatureView($output);
+		}
+	function ourServiceSectionFeatureView($output = null){
+		$this->load->view("our-service-feature/our-feature.php",$output);
 
 	}
 }
