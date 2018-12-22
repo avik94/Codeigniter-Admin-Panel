@@ -128,4 +128,66 @@ class Admin extends CI_Controller {
 		$this->Model->updateDataById($idName,$id,$tableName,$data);
 
 	}
+
+	// second section service view function
+	public function SecondServiceView(){
+		$crud = new grocery_CRUD();
+
+		// $crud->set_theme('datatables');
+
+		$crud->set_table('seccond_section_service');
+
+		$crud->set_subject('Groups');
+
+		// $crud->columns('subject_name','status');
+
+		//$this->config->config['grocery_crud_file_upload_allow_file_types']  = 'gif|jpeg|jpg|png|svg';
+
+		// $crud->required_fields('subject_name', 'status');
+
+		//$crud->set_field_upload('logo','assets/uploads/images');
+
+		// $crud->field_type('status', 'true_false');
+
+	  $crud->callback_after_upload(array($this,'callback_after_upload'));
+
+		$crud->unset_delete();
+
+		// $crud->unset_export();
+
+		// $crud->unset_fields('created_at','updated_at');
+
+		// $crud->unset_print();
+
+		$crud->unset_add();
+
+		$output = $crud->render();
+
+		$this->SeccondServiceOutput($output);
+		}
+	function SeccondServiceOutput($output = null){
+		$this->load->view("seccond-section-service/seccond-service-view.php",$output);
+
+	}
+
+	// expertise Section
+	public function expertiseSection(){
+
+		$crud = new grocery_CRUD();
+		$crud->set_theme('datatables');
+		$crud->set_table('skill_section');
+
+		$this->config->config['grocery_crud_file_upload_allow_file_types']  = 'gif|jpeg|jpg|png|svg';
+
+		$crud->set_field_upload('image','uploads/');
+		$crud->unset_delete();
+		$crud->unset_add();
+		$crud->callback_before_delete(array($this,'log_user_before_delete'));
+		$output = $crud->render();
+		$this->expertiseSectionView($output);
+		}
+	function expertiseSectionView($output = null){
+		$this->load->view("expertise-skill/skill.php",$output);
+
+	}
 }

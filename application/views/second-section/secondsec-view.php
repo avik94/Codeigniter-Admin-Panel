@@ -132,7 +132,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li>
-          <a href="admin_dashboard">
+          <a href="<?php echo base_url(); ?>admin_dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
@@ -145,8 +145,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="banner_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="banner_view"><i class="fa fa-eye"></i> View</a></li>
+            <li><a href="<?php echo base_url(); ?>banner_edit"><i class="fa fa-edit"></i> Edit</a></li>
+            <li><a href="<?php echo base_url(); ?>banner_view"><i class="fa fa-eye"></i> View</a></li>
           </ul>
         </li>
         <!-- first menu end  -->
@@ -159,8 +159,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li class="active"><a href="second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="<?php echo base_url(); ?>second_sec_edit"><i class="fa fa-edit"></i> Edit</a></li>
+            <li class="active"><a href="<?php echo base_url(); ?>second_sec_view"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
         <!-- seccong menu end -->
@@ -173,8 +173,19 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="second_sec_service_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="second-section-service-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li class=""><a href="<?php echo base_url(); ?>second_sec_service_edit"><i class="fa fa-edit"></i> Edit</a></li>
+            <li><a href="<?php echo base_url(); ?>second_sec_service_view"><i class="fa fa-circle-o"></i> View</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Expertise Skill</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url(); ?>expertise_skill_edit"><i class="fa fa-edit"></i> Edit</a></li>
           </ul>
         </li>
         <!-- third menu end -->
@@ -187,8 +198,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class=""><a href="our-service-headding.html"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="our-service-headding-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li class=""><a href="<?php echo base_url(); ?>our-service-headding.html"><i class="fa fa-edit"></i> Edit</a></li>
+            <li><a href="<?php echo base_url(); ?>our-service-headding-view.html"><i class="fa fa-circle-o"></i> View</a></li>
           </ul>
         </li>
         <!-- fourth menu end -->

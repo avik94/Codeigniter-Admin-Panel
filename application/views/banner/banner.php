@@ -174,7 +174,18 @@
           </a>
           <ul class="treeview-menu">
             <li class=""><a href="second_sec_service_edit"><i class="fa fa-edit"></i> Edit</a></li>
-            <li><a href="second-section-service-view.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="second_sec_service_view"><i class="fa fa-circle-o"></i> View</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Expertise Skill</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<?php echo base_url(); ?>expertise_skill_edit"><i class="fa fa-edit"></i> Edit</a></li>
           </ul>
         </li>
         <!-- third menu end -->
